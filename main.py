@@ -82,4 +82,5 @@ async def secret_error(ctx, error):
     if isinstance(error, commands.MissingRole):
         await ctx.send("You do not have permission to do that!")
 
+print("TOKEN LOADED:", token is not None)
 bot.run(token, log_handler=handler, log_level=logging.DEBUG)
